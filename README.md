@@ -22,7 +22,7 @@ You can find other (older versions) at [Docker Hub](https://hub.docker.com/r/eri
 Replace *alpine-apache-php* and tags with whatever you want when building your own image.
 
 ```sh
-docker build -t alpine-apache-php:latest .
+docker build -t php7-test:latest .
 ```
 
 ### Run
@@ -37,7 +37,7 @@ docker run --detach \
     --publish 4343:443 \
     --restart unless-stopped \
     --volume /docker/data/www:/htdocs \
-    eriksoderblom/alpine-apache-php:latest
+    php7-test:latest
 ```
 
 #### Customized run
