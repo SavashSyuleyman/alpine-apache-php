@@ -27,14 +27,14 @@ docker build -t alpine-apache-php:latest .
 
 ### Run
 
-Change the left side port *80*, *443* and `/docker/data/www` to your preferred values.  
+Change the left side port *8011*, *4443* and `/docker/data/www` to your preferred values.  
 You can use the image name from the previous step if you built your own image.
 
 ```sh
 docker run --detach \
     --name alpine-apache-php \
-    --publish 80:80 \
-    --publish 443:443 \
+    --publish 8011:80 \
+    --publish 4343:443 \
     --restart unless-stopped \
     --volume /docker/data/www:/htdocs \
     eriksoderblom/alpine-apache-php:latest
