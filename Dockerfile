@@ -1,32 +1,32 @@
 FROM alpine:3.15
 LABEL maintainer="erik.soderblom@gmail.com"
-LABEL description="Alpine based image with apache2 and php8."
+LABEL description="Alpine based image with apache2 and php7."
 
 # Setup apache and php
 RUN apk --no-cache --update \
     add apache2 \
     apache2-ssl \
     curl \
-    php8-apache2 \
-    php8-bcmath \
-    php8-bz2 \
-    php8-calendar \
-    php8-common \
-    php8-ctype \
-    php8-curl \
-    php8-dom \
-    php8-gd \
-    php8-iconv \
-    php8-mbstring \
-    php8-mysqli \
-    php8-mysqlnd \
-    php8-openssl \
-    php8-pdo_mysql \
-    php8-pdo_pgsql \
-    php8-pdo_sqlite \
-    php8-phar \
-    php8-session \
-    php8-xml \
+    php7-apache2 \
+    php7-bcmath \
+    php7-bz2 \
+    php7-calendar \
+    php7-common \
+    php7-ctype \
+    php7-curl \
+    php7-dom \
+    php7-gd \
+    php7-iconv \
+    php7-mbstring \
+    php7-mysqli \
+    php7-mysqlnd \
+    php7-openssl \
+    php7-pdo_mysql \
+    php7-pdo_pgsql \
+    php7-pdo_sqlite \
+    php7-phar \
+    php7-session \
+    php7-xml \
     && mkdir /htdocs
 
 EXPOSE 80 443
